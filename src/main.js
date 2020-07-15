@@ -12,6 +12,10 @@ import '@babel/polyfill'
 import 'lib-flexible/flexible.js'
 // 授权
 import '@/permission'
+// 时间处理
+import '@/plugins/dateTime'
+// weixin-js-sdk
+import wx from 'weixin-js-sdk'
 
 Vue.config.productionTip = false
 
