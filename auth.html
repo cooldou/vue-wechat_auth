@@ -7,6 +7,7 @@
 
   <body>
     <script>
+      // 授权中间件，直接部署在服务器地址的根目录使用
       var GWC = {
         version: '1.2.0',
         urlParams: {},
@@ -16,7 +17,7 @@
                     var hash = window.location.hash.split('#')[1];
                     if (hash) {
                       baseWithSearch = baseWithSearch + '#' + hash;
-                    } 
+                    }
                     for (var key in params) {
                         var attrValue = params[key];
                         if (attrValue !== undefined) {
@@ -34,9 +35,9 @@
                         }
                     }
                 }
-               
+
                 return baseWithSearch;
-            
+
             },
         getUrlParams: function() {
           var pairs = location.search.substring(1).split('&')
@@ -71,7 +72,7 @@
               scope: scope,
               state: encodeURIComponent(state)
             })
-        
+
           } else {
             const params = Object.assign({}, GWC.urlParams)
             delete params.backUrl

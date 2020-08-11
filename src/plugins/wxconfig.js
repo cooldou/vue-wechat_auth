@@ -14,6 +14,7 @@ async function wxconfig() {
     nonceStr: res.data.noncestr,
     signature: res.data.signature,
     appId: 'wx4bcc988018231d6a',
+    // 微信分享
     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareQZone']
   })
 }

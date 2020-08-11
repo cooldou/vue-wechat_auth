@@ -1,3 +1,4 @@
+// 时间处理插件
 import Vue from 'vue'
 import dayjs from 'dayjs'
 
